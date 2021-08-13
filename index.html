@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+
+
+
+        
+        <script>
+            function Form() {
+                var name = 
+                    document.forms["RegForm"]["cname"];
+                var fname = document.forms["RegForm"]["fname"];
+                var mname = document.forms["RegForm"]["mname"];
+                var date = document.forms["RegForm"]["date"];
+                var identity = document.forms["RegForm"]["identity"];
+                var gov = document.forms["RegForm"]["gov"];
+                var Gender = 
+                    document.forms["RegForm"]["gender"];
+                var email = 
+                    document.forms["RegForm"]["email"];
+                var cemail = 
+                    document.forms["RegForm"]["cemail"];
+                    var Mob = 
+                    document.forms["RegForm"]["mob"];
+                var amob = 
+                    document.forms["RegForm"]["amob"];
+                
+                
+                var address = 
+                    document.forms["RegForm"]["Address"];
+                    var submit = 
+                    document.forms["RegForm"]["submit"];
+                    var Reset = 
+                    document.forms["RegForm"]["reset"];
+  
+                if (name.value == "") {
+                    window.alert("Please enter your name.");
+                    name.focus();
+                    return false;
+                }
+                if (fname.value == "") {
+                    window.alert("Please enter your father's name.");
+                    name.focus();
+                    return false;
+                }
+                if (mname.value == "") {
+                    window.alert("Please enter your mother's name.");
+                    name.focus();
+                    return false;
+                }
+                if (date.value == "") {
+                    window.alert("Please enter your BOD.");
+                    name.focus();
+                    return false;
+                }
+                if (identity.value == "") {
+                    window.alert("Please enter your identity.");
+                    name.focus();
+                    return false;
+                }
+              
+                if (gov.value == "") {
+                    window.alert("Please enter Valid Govt Identity Number:-.");
+                    address.focus();
+                    return false;
+                }
+  
+                if (Gender.value == "") {
+                    window.alert(
+                      "Please enter a valid e-mail address.");
+                    email.focus();
+                    return false;
+                }
+  
+                if (mob.value == "") {
+                    window.alert(
+                      "Please enter your Mobile number.");
+                    phone.focus();
+                    return false;
+                }
+  
+                if (amob.value == "") {
+                    window.alert("Please enter your Alternate mob no");
+                    password.focus();
+                    return false;
+                }
+                if (submit.value == "") {
+                    window.alert("form is submitted");
+                    password.focus();
+                    return false;
+                }
+                if (Reset.value == "") {
+                    window.alert("you have reset it");
+                    password.focus();
+                    return false;
+                }
+              
+  
+                return true;
+            }
+        </script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <style>
+         div {
+                box-sizing: border-box;
+                width: 100%;
+                /* border: 100px solid #fff; */
+              
+                align-content: center;
+                align-items: center;
+            }
+            html{
+        box-sizing: border-box; 
+        font-size: 16px;
+        line-height: 1.6;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: 878787;
+        /* align-content: center;
+        align-items: center; */
+        
+    }
+    *,*::before,*:after{
+        box-sizing: inherit; 
+        padding: 0;
+        margin: 0;
+    
+    }
+    
+    main{
+        margin:Irem auto;
+        width: 60%;
+        max-width:950px ;
+   padding: 100px;
+      margin-left: 8%;
+      margin-top: 20px;
+      background-color:rgb(187, 227, 236);
+      box-shadow: lightslategray 10px;
+    
+      
+    }
+    .form-box{
+        padding:0.5rem 0 ;
+        display: flex;
+        flex-direction: row;
+    }
+    .form-box select{
+        padding:0.5rem 0 ;
+        display: flex;
+        flex-direction: row;
+      
+    }
+    h2{
+        background-color: lightgray;
+        padding: 100px;
+        border-radius: 9px;
+     
+    }input{
+        max-height: 30px;
+         padding: 16px;
+         margin-left: 12px;
+    }select{
+        margin-left: 12px;
+    }
+       
+   button{
+                bottom: auto;
+              background-color: olivedrab;
+                padding: 12PX;
+                border-radius: 8px;
+             align-items: center;
+            }
+
+.m{
+    text-align: center;
+}
+
+   
+  </style>
+
+    </head>
+    <body>
+        <h1 style="text-align: center; color: rgb(119, 9, 9); text-decoration: underline;">REGISTRATION FORM</h1>
+        <!-- <form name="RegForm" action="/submit.php" 
+        onsubmit="return Form()" method="post"> -->
+        <center >
+        <main>
+            <div >
+            <h2 class="form-box">Personal Details</h2></div>
+            <form   name="RegForm" action="/submit.php" 
+            onsubmit="return Form()" method="post">
+                <div class="form-box">
+                <label for="Candidate’s Name" >Candidate’s Name</label>
+               
+                <input type="name" id="Candidate’s Name" placeholder="Candidate’s Name" name="cname">
+            </div>
+            <div class="form-box">
+                <label for="Father's Name" >Father's Name</label>
+                
+                
+<br>
+                <input type="Father's Name" id="Father's Name" placeholder="Father's Name" name="fname">
+            </div>
+            <div class="form-box">
+                <label for="Mother's Name" >Mother's Name</label>
+                
+                <input type="Mother's Name" id="Mother's Name" placeholder="Mother's Name" name="mname">
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+           <div class="form-box">
+            <label for="Date Of Birth">Date Of Birth</label>
+           
+<input type="date" id="DATE OF BIRTH" name="trip-start"
+       value="yy-mm-dd"
+       min="2002-01-01" max="2021-12-31" name="date"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            <div class="form-box">
+                <label for="Identity Type" name="identity" >Identity Type</label>
+             
+                <select type="select" id="Identity Type" placeholder="">
+                    <option>---select-----</option>
+                <option>PAN CARD</option>
+                <option>AADHAR CARD</option>
+                <option>VOTER ID</option>
+                <option>DRIVING CARD</option>
+                <option>QUALIFYING </option>
+            <option>EXAMINATION ADMIT CARD WITH PHOTO</option>
+            
+            </select>
+            </div>
+            
+            <div class="form-box">
+            <label for="Valid Govt Identity Number: " >Valid Govt Identity Number: </label>
+            
+            <input type="" id="Valid Govt Identity Number: " placeholder="Valid Govt Identity Number" name="gov">
+        </div>
+       <div class="form-box">
+
+            <label >Gender</label>
+          
+            <select type="select" id="Gender" placeholder="" name="gender" >
+                <option>---select-----</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Others</option></select>
+         
+        </div> 
+        
+        <div class="form-box">
+            <label for="E-mail" >E-mail</label>
+           
+            <input type="email" id="E-mail" placeholder="E-mail" name="email">
+        </div>
+        <div class="form-box">
+            <label for="Confirm Email" >Confirm Email</label>
+          
+            <input type="password" id="Confirm Email" placeholder="Confirm Email" name="cemail">
+        </div>
+        <div class="form-box">
+            <label for=" Mobile Number (+91)" name="mob"> Mobile Number (+91)</label>
+           
+            <input type="number" id="number" placeholder="">
+        </div>
+        <div class="form-box">
+            <label for="Alternate Mobile Number (+91)" name="amob">Alternate Mobile Number (+91)</label>
+           
+            <input type="number" id="number" placeholder="">
+        </div>
+        <h2  class="form-box">Permanent Address</h2>
+        <!-- <form name="my-form" action="#" method="get"> -->
+            <div class="form-box">
+            <label for="Address Details" name="address">Address Details</label>
+          
+            <input type="name" id="Address Details" placeholder="">
+        </div>
+        <div class="form-box">
+            <label for="Locality" >Locality</label>
+            
+            <input type="Locality" id="Locality" placeholder="">
+        </div>
+        <div class="form-box">
+            <label for=" City/Town/Village" >  City/Town/Village</label>
+           
+            <input type="City/Town/Village" id="City/Town/Village" placeholder="">
+        </div>
+        <div class="form-box">
+            <label for="State /UT" >State /UT</label>
+           
+            <select type="select" id="State /UT" placeholder="">
+                <option>---select-----</option>
+            <option>BIHAR</option>
+            <option>UTTAR PRADESH</option>
+            <option>ASSAM</option>
+            <option>GOA</option>
+            <option>GUJRAT</option>
+            <option>BIHAR</option>
+            <option>UTTAR PRADESH</option>
+            <option>ASSAM</option>
+            <option>GOA</option>
+            <option>KERALA</option>
+        <option>DELHI</option>
+        <option>UTTRAKHAND</option>
+        <option>HIMACHAL PRADESH</option>
+        <option>LADAKH</option>
+        <option>CHAATTISGARH</option>
+        <option>JHARKHAND</option>
+        <option>KARNATAKA</option>
+        <option>MADHYA PRADESH</option>
+        <option>ODISHA</option>
+        <option>RAJASTHAN</option>
+        <option>SIKKIM</option>
+    <option>TRIPURA</option>
+    <option>ARUNACHAL PRADESH</option>
+    <option>MIZORAM</option>
+   
+
+        </select>
+        </div>
+        <div class="form-box">
+            <label for=" Pin Code" > Pin Code</label>
+           
+            <input type="Pin Code" id="Pin Code" placeholder="">
+        </div>
+        
+        <div class="form-box">
+            <input type="checkbox" id="checkbox" placeholder="">
+           
+            <label for=" checkbox" class="form-box" > Present Address (If the Present Address and Permanent Address are same, Please select the check box.)</label>
+            <!-- <label for=" checkbox"  > Present Address (If the Present Address and Permanent Address are same, Please select the check box.)</label> -->
+           
+        </div>
+
+        <div class="form-box">
+            <label for="Address Details " >Address Details</label>
+        
+            <input type="address" id="Address Details" placeholder="">
+        </div>
+        <div class="form-box">
+            <label for="Address Details" >Address Details</label>
+  
+            <input type="name" id="Address Details" placeholder="">
+        </div>
+        <div class="form-box">
+            <label for="Locality" >Locality</label>
+            
+            <input type="Locality" id="Locality" placeholder="">
+        </div>
+        <div class="form-box">
+            <label for=" City/Town/Village" >  City/Town/Village</label>
+            
+            <input type="City/Town/Village" id="City/Town/Village" placeholder="">
+        </div>
+        <div class="form-box">
+            <label for="State /UT" >State /UT</label>
+    
+            <select type="select" id="State /UT" placeholder="">
+                <option>---select-----</option>
+            <option>BIHAR</option>
+            <option>UTTAR PRADESH</option>
+            <option>ASSAM</option>
+            <option>GOA</option>
+            <option>GUJRAT</option>
+            <option>BIHAR</option>
+            <option>UTTAR PRADESH</option>
+            <option>ASSAM</option>
+            <option>GOA</option>
+            <option>KERALA</option>
+        <option>DELHI</option>
+        <option>UTTRAKHAND</option>
+        <option>HIMACHAL PRADESH</option>
+        <option>LADAKH</option>
+        <option>CHAATTISGARH</option>
+        <option>JHARKHAND</option>
+        <option>KARNATAKA</option>
+        <option>MADHYA PRADESH</option>
+        <option>ODISHA</option>
+        <option>RAJASTHAN</option>
+        <option>SIKKIM</option>
+        <option>TRIPURA</option>
+        <option>ARUNACHAL PRADESH</option>
+        <option>MIZORAM</option>
+       
+    
+            </select>
+            </div>
+            <div class="form-box">
+                <label for=" Pin Code" > Pin Code</label>
+            
+                <input type="Pin Code" id="Pin Code" placeholder="">
+            </div>
+            
+
+         
+            <h2 class="form-box">Choose Password</h2>
+           
+                <div class="form-box">
+                <label for="Password" >Password</label>
+           
+                <input type="name" id="Password" placeholder="">
+            </div>
+            <div class="form-box">
+                <label for="Confirm Password" >Confirm Password</label>
+               
+                <input type="Password" id="Confirm Password" placeholder="">
+            </div>
+            
+            <div class="form-box">
+                <label for="Security Answer" >Security Answer</label>
+            
+                <select type="select" id="Security Answer" placeholder="">
+                    <option>---select-----</option>
+                <option>Which is your favourite book?</option>
+                <option>what is your nick name?</option>
+                <option>your personal status?</option>
+               
+            <option>What is your first school name ?</option>
+        
+            </select>
+            </div>
+            <div class="form-box">
+                <label for=" Security Answer" > Security Answer</label>
+              
+                <input type="Pin " id="Security Answer" placeholder="">
+            </div>
+            
+       
+          
+
+            <div class="form-box">
+                <p>Comments: <textarea cols="55" 
+                    name="Comment"> </textarea></p>
+                 
+ 
+ </div>
+
+   
+      <div class="form_container">
+        <form action="#" id="my_captcha_form">
+          <div class="g-recaptcha" 
+      data-sitekey="6LfrFKQUAAAAAMzFobDZ7ZWy982lDxeps8cd1I2i" 
+      ></div>
+
+
+<div class="form-box">
+  
+        
+<button onclick="Form()" name="submit">submit</button>
+<button  onclick="Form()" name="reset">Reset</button>
+<p id="demo"></p>
+</div>
+</form>
+
+        </main>
+      
+    </center>
+   <!-- <img src="image/al.png" width="100px" height="100px"> -->
+
+<!-- <a href="a_gallery.html" style="text-decoration: none;">click here</a> -->
+    </body>
+
+</html>
